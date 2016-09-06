@@ -5,7 +5,7 @@ const Comments = React.createClass({
     event.preventDefault();
     const postId = this.props.params.postId;
     const author = this.refs.author.value;
-    const commment = this.refs.commment.value;
+    const comment = this.refs.comment.value;
     this.props.addComment(postId, author, comment);
     this.refs.commentForm.reset();
   },
